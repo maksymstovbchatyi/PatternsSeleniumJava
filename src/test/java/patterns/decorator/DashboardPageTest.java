@@ -7,13 +7,15 @@ import patterns.BaseTest;
 
 import java.util.function.Consumer;
 
-public class DashboardPageTest extends BaseTest {
+public class DashboardPageTest extends BaseTest{
 
     private DashboardPage dashboardPage;
 
+
     @BeforeTest
     public void setDashboardPage(){
-        this.dashboardPage = new DashboardPage(driver);
+
+        this.dashboardPage = new DashboardPage(this.driver);
     }
 
     @Test(dataProvider = "getData")

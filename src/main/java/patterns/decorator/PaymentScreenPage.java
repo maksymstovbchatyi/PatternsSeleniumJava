@@ -30,7 +30,7 @@ public class PaymentScreenPage {
     @FindBy(id="status")
     private WebElement status;
 
-    public PaymentScreenPage(WebDriver driver){
+    public PaymentScreenPage(final WebDriver driver){
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
